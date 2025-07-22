@@ -1878,5 +1878,233 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+  /*-----------------------------------*\
+  #UPDATED BUTTON STYLES
+\*-----------------------------------*/
 
+/* Base button reset styles (unchanged) */
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Sidebar button (data-sidebar-btn) */
+.info_more-btn {
+  position: absolute;
+  top: -20px; /* Adjusted for larger size */
+  right: -20px; /* Adjusted for larger size */
+  border-radius: 0 18px; /* Slightly larger border-radius */
+  font-size: var(--fs-6); /* Slightly larger font size, e.g., 14px */
+  color: var(--orange-yellow-crayola);
+  background: var(--border-gradient-onyx);
+  padding: 12px; /* Increased padding for bigger button */
+  box-shadow: var(--shadow-2);
+  transition: var(--transition-1);
+  z-index: 1;
+}
+
+.info_more-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--bg-gradient-jet);
+  transition: var(--transition-1);
+  z-index: -1;
+}
+
+.info_more-btn:hover,
+.info_more-btn:focus {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.info_more-btn:hover::before,
+.info_more-btn:focus::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.info_more-btn span {
+  display: none;
+}
+
+/* Navbar links acting as buttons (data-nav-link) */
+.navbar-link {
+  color: var(--light-gray);
+  font-size: var(--fs-7); /* Slightly larger font size, e.g., 13px */
+  padding: 22px 9px; /* Increased padding for bigger button */
+  transition: color var(--transition-1);
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  color: var(--orange-yellow-crayola);
+}
+
+.navbar-link.active {
+  color: var(--orange-yellow-crayola);
+}
+
+.navbar-link.active .span {
+  transform: translateY(-20px);
+}
+
+.navbar-link .span {
+  transition: var(--transition-1);
+}
+
+
+/* Filter buttons (data-filter-btn) */
+.filter-btn {
+  background: var(--bg-gradient-jet);
+  color: var(--light-gray);
+  font-size: var(--fs-5); /* Keep font size as is or slightly increase if needed */
+  font-weight: var(--fw-500);
+  padding: 12px 22px; /* Increased padding for bigger button */
+  border-radius: 10px; /* Slightly larger border-radius */
+  transition: var(--transition-1);
+  display: inline-block; /* Ensure they are side-by-side if in a flex/grid container */
+  margin: 5px; /* Add a small margin to separate them when side-by-side */
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--smoky-black);
+}
+
+.filter-btn.active {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--smoky-black);
+}
+
+/* Filter select box items acting as buttons */
+.filter-select {
+  background: var(--eerie-black-1);
+  color: var(--light-gray);
+  font-size: var(--fs-5); /* Slightly larger font size, e.g., 15px */
+  font-weight: var(--fw-300);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px; /* Increased padding for bigger button */
+  border-radius: 16px; /* Slightly larger border-radius */
+  box-shadow: var(--shadow-2);
+  cursor: pointer;
+}
+
+.select-list {
+  background: var(--eerie-black-1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 18px; /* Increased padding */
+  border-radius: 16px; /* Slightly larger border-radius */
+  box-shadow: var(--shadow-2);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+}
+
+.filter-select-box.active .select-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(12px); /* Adjusted for larger padding */
+}
+
+.select-item button {
+  background: none;
+  border: none;
+  font: inherit;
+  width: 100%;
+  text-align: left;
+  color: var(--light-gray);
+  font-size: var(--fs-5); /* Slightly larger font size, e.g., 15px */
+  padding: 10px 0; /* Increased padding */
+  transition: color var(--transition-1);
+}
+
+.select-item button:hover {
+  color: var(--orange-yellow-crayola);
+}
+
+/* Language switcher buttons */
+.lang-button {
+  background: var(--onyx);
+  color: var(--light-gray);
+  font-size: var(--fs-6); /* Slightly larger font size, e.g., 14px */
+  font-weight: var(--fw-500);
+  padding: 8px 15px; /* Increased padding for bigger button */
+  border-radius: 10px; /* Slightly larger border-radius */
+  transition: var(--transition-1);
+  display: inline-block; /* Ensure they are side-by-side */
+  margin-right: 8px; /* Add margin for spacing */
+}
+
+.lang-button:hover,
+.lang-button:focus {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
+
+.lang-button.active {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
+/* İletişim Bölümü */
+.contact-form {
+  background: 
+    linear-gradient(
+      to bottom,
+      hsla(240, 1%, 18%, 0.251) 0%,
+      hsla(240, 2%, 11%, 0) 100%
+    ),
+    hsl(240, 2%, 13%); /* Arka plan renkleri */
+  min-height: 400px; /* Yeterli yükseklik sağlamak için */
+  display: flex;
+  flex-direction: column; /* İçeriği dikeyde hizalamak için */
+  justify-content: center; /* Dikeyde ortalama */
+  align-items: center; /* Yatayda ortalama */
+  text-align: center; /* Metni ortalama */
+  padding: 20px; /* İç boşluk */
+  border-radius: 10px; /* Hafif yuvarlak köşeler */
+}
+
+/* Başlık */
+.contact-form .form-title {
+  color: hsl(0, 0%, 100%); /* Beyaz yazı rengi */
+  font-size: 2.5em; /* Büyük başlık */
+  margin-bottom: 20px; /* Alt boşluk */
+  letter-spacing: 1px; /* Harf aralığı */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Hafif gölge */
+}
+
+/* E-posta Adresi Kapsayıcısı */
+.contact-info {
+  margin-top: 20px;
+}
+
+/* E-posta Adresi Linki */
+.contact-info a {
+  color: hsl(0, 0%, 100%); /* Beyaz yazı rengi */
+  font-size: 1.8em; /* Büyük ve okunabilir e-posta */
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  font-weight: 600; /* Kalın yazı tipi */
+  transition: color 0.3s ease-in-out; /* Renk geçiş efekti */
+}
+
+.contact-info a:hover {
+  color: hsla(240, 0%, 100%, 0.8); /* Üzerine gelince hafif parlama */
+}
+
+/* Mevcut form elemanlarını gizle */
+.contact-form .form,
+.contact-form .input-wrapper,
+.contact-form textarea,
+.contact-form .form-btn {
+  display: none;
+}
 }
