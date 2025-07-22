@@ -2,7 +2,7 @@ Yapabildiklerimi, projelerimi ve çalışmalarımı yayınlamak için bir portf�
 
 https://github.com/codewithsadee/vcard-personal-portfolio
 
-İlk naktıklarımdan biri olan bu tasarımı beğendim ve kullanmaya karar verdim.
+İlk baktıklarımdan biri olan bu tasarımı beğendim ve kullanmaya karar verdim.
 
 • Türkçeleştirme yapmak için data-target-page ve data-translation-key data attribute'ları ekledim.
 
