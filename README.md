@@ -5,7 +5,9 @@ https://github.com/codewithsadee/vcard-personal-portfolio
 İlk naktıklarımdan biri olan bu tasarımı beğendim ve kullanmaya karar verdim.
 
 • Türkçeleştirme yapmak için data-target-page ve data-translation-key data attribute'ları ekledim.
+
 • Bazı özellikler ekledim ve çıkarttım.
+
 • Türkçe ve İngilizce görüntüleme seçenekleri ekledim.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
