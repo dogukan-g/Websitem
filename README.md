@@ -1,4 +1,4 @@
-Yapabildiklerimi, projelerimi ve çalışmalarımı yayınlamak için bir portföy sitesi oluşturmaya karar verdim. Sıfırdan yazmak yerine template kullanmaya karar verdim.
+Yapabildiklerimi, projelerimi ve çalışmalarımı yayımlamak için bir portföy sitesi oluşturmaya karar verdim. Sıfırdan yazmak yerine template kullanmaya karar verdim.
 
 https://github.com/codewithsadee/vcard-personal-portfolio
 
